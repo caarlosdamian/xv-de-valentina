@@ -88,7 +88,7 @@ export const inviteConfig: InviteConfig = {
       props: {
         images: [
           { src: '/images/gallery-1.jpeg', alt: 'Foto 1' },
-          { src: '/images/gallery-2.jpg', alt: 'Foto 2' },
+          { src: '/images/gallery-2.jpeg', alt: 'Foto 2' },
           { src: '/images/gallery-3.jpg', alt: 'Foto 3' },
           { src: '/images/gallery-4.jpg', alt: 'Foto 4' },
         ],

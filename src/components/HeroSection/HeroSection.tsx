@@ -16,6 +16,8 @@ export default function HeroSection({ backgroundImage, overlayOpacity = 0.6, dat
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   const handleScroll = () => {
+    // Force music play on this specific interaction
+    document.dispatchEvent(new Event('force-play-music'));
     const nextSection = document.getElementById('details');
     if (nextSection) {
       nextSection.scrollIntoView({ behavior: 'smooth' });
