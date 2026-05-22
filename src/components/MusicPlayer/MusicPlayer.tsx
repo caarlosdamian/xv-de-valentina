@@ -37,12 +37,16 @@ export default function MusicPlayer({ enabled, src, autoplay }: MusicConfig) {
     document.addEventListener('click', handleInteraction, { once: true });
     document.addEventListener('touchstart', handleInteraction, { once: true });
     document.addEventListener('scroll', handleInteraction, { once: true });
+    document.addEventListener('mousemove', handleInteraction, { once: true });
+    document.addEventListener('keydown', handleInteraction, { once: true });
     document.addEventListener('force-play-music', handleInteraction, { once: true });
 
     return () => {
       document.removeEventListener('click', handleInteraction);
       document.removeEventListener('touchstart', handleInteraction);
       document.removeEventListener('scroll', handleInteraction);
+      document.removeEventListener('mousemove', handleInteraction);
+      document.removeEventListener('keydown', handleInteraction);
       document.removeEventListener('force-play-music', handleInteraction);
     };
   }, [hasInteracted, autoplay, enabled, tryPlay]);
