@@ -8,8 +8,8 @@ import type { InviteConfig } from './types';
 export const inviteConfig: InviteConfig = {
   // ── Page metadata ──
   meta: {
-    title: 'Valentina\'s Quinceañera',
-    description: 'Please join us to celebrate Valentina\'s Quinceañera',
+    title: 'Anaya Valentina\'s Quinceañera',
+    description: 'Please join us to celebrate Anaya Valentina\'s Quinceañera',
     ogImage: '/og.jpg',
     favicon: '/favicon.svg',
   },
@@ -34,7 +34,7 @@ export const inviteConfig: InviteConfig = {
         showCountdown: true,
         overlayOpacity: 0.6,
         dateBlock: {
-          dayOfWeek: 'Saturday',
+          dayOfWeek: 'Sunday',
           time: '4:00 PM',
           day: '02',
           month: 'August',
@@ -87,10 +87,10 @@ export const inviteConfig: InviteConfig = {
       component: 'GallerySection',
       props: {
         images: [
+          { src: '/images/gallery-4.mp4', alt: 'Foto 1', type: 'video' },
           { src: '/images/gallery-1.jpeg', alt: 'Foto 1' },
           { src: '/images/gallery-2.jpeg', alt: 'Foto 2' },
-          { src: '/images/gallery-3.jpg', alt: 'Foto 3' },
-          { src: '/images/gallery-4.jpg', alt: 'Foto 4' },
+          { src: '/images/gallery-3.jpeg', alt: 'Foto 3' },
         ],
         columns: 3,
       },

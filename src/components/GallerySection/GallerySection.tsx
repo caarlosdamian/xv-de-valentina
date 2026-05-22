@@ -37,7 +37,11 @@ export default function GallerySection({ images, columns = 3 }: GalleryProps) {
             whileHover={{ scale: 1.05 }}
             onClick={() => setSelectedImage(i)}
           >
-            <img src={img.src} alt={img.alt} loading="lazy" />
+            {img.type === 'video' ? (
+              <video src={img.src} muted loop playsInline autoPlay />
+            ) : (
+              <img src={img.src} alt={img.alt} loading="lazy" />
+            )}
             <div className="gallery-item-overlay" />
           </motion.div>
         ))}
@@ -61,10 +65,19 @@ export default function GallerySection({ images, columns = 3 }: GalleryProps) {
               transition={{ type: 'spring', stiffness: 300, damping: 25 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <img
-                src={images[selectedImage].src}
-                alt={images[selectedImage].alt}
-              />
+              {images[selectedImage].type === 'video' ? (
+                <video
+                  src={images[selectedImage].src}
+                  controls
+                  autoPlay
+                  playsInline
+                />
+              ) : (
+                <img
+                  src={images[selectedImage].src}
+                  alt={images[selectedImage].alt}
+                />
+              )}
               <button
                 className="lightbox-close"
                 onClick={() => setSelectedImage(null)}

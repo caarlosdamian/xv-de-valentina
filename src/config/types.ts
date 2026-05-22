@@ -57,7 +57,7 @@ export interface DressCodeProps {
 }
 
 export interface GalleryProps {
-  images: { src: string; alt: string }[];
+  images: { src: string; alt: string; type?: 'image' | 'video' }[];
   columns?: number;
 }
 

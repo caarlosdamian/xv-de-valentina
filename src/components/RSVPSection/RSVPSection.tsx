@@ -10,12 +10,18 @@ const fadeInUp = {
   transition: { duration: 0.8 },
 };
 
-function buildWhatsAppUrl(number: string, template: string, data: Record<string, string>): string {
+function buildSmsUrl(number: string, template: string, data: Record<string, string>): string {
   let message = template;
   Object.entries(data).forEach(([key, value]) => {
     message = message.replace(`{${key}}`, value);
   });
-  return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+  
+  // Detect iOS for proper SMS link formatting (older iOS used &, modern uses ?)
+  // To be safe and compatible, we check if it's iOS
+  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const separator = isIOS ? '&' : '?';
+  
+  return `sms:${number}${separator}body=${encodeURIComponent(message)}`;
 }
 
 export default function RSVPSection({ whatsappNumber, maxGuests = 3 }: RSVPProps) {
@@ -26,7 +32,7 @@ export default function RSVPSection({ whatsappNumber, maxGuests = 3 }: RSVPProps
 
   const handleConfirm = () => {
     if (!name.trim()) return;
-    const url = buildWhatsAppUrl(whatsappNumber, t('rsvp.whatsappConfirm'), {
+    const url = buildSmsUrl(whatsappNumber, t('rsvp.whatsappConfirm'), {
       name: name.trim(),
       guests: String(guests),
       message: message.trim() ? `Mensaje: ${message.trim()}` : '',
@@ -36,7 +42,7 @@ export default function RSVPSection({ whatsappNumber, maxGuests = 3 }: RSVPProps
 
   const handleDecline = () => {
     if (!name.trim()) return;
-    const url = buildWhatsAppUrl(whatsappNumber, t('rsvp.whatsappDecline'), {
+    const url = buildSmsUrl(whatsappNumber, t('rsvp.whatsappDecline'), {
       name: name.trim(),
       message: message.trim() ? `Mensaje: ${message.trim()}` : '',
     });

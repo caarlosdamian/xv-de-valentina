@@ -12,7 +12,7 @@ export const es = {
   // ── Hero ──
   hero: {
     preTitle: 'Por favor acompáñanos a celebrar',
-    title: "Valentina's",
+    title: "Anaya Valentina's",
     name: 'Quinceañera',
     invitation: 'Con la bendición de Dios y el amor de mi familia, te invito a celebrar mis 15 años, un día que marca el comienzo de una nueva etapa en mi vida.',
     scrollHint: 'Let’s get the vibe check. Hit the music',
@@ -28,7 +28,7 @@ export const es = {
     venueLabel: 'Lugar',
     addressLabel: 'Dirección',
     mapButton: 'Llévame ahí',
-    dateFormatted: 'Sábado, 02 de Agosto de 2026',
+    dateFormatted: 'Domingo, 02 de Agosto de 2026',
   },
 
   // ── Countdown ──
@@ -80,14 +80,14 @@ export const es = {
     messagePlaceholder: 'Escribe un mensaje...',
     confirmButton: 'Confirmar Asistencia',
     declineButton: 'No podré asistir',
-    whatsappConfirm: '¡Hola! Confirmo mi asistencia a los XV Años de Valentina 🎉\n\nNombre: {name}\nInvitados: {guests}\n{message}',
-    whatsappDecline: 'Hola, lamentablemente no podré asistir a los XV Años de Valentina 😔\n\nNombre: {name}\n{message}',
+    whatsappConfirm: '¡Hola! Confirmo mi asistencia a los XV Años de Anaya Valentina 🎉\n\nNombre: {name}\nInvitados: {guests}\n{message}',
+    whatsappDecline: 'Hola, lamentablemente no podré asistir a los XV Años de Anaya Valentina 😔\n\nNombre: {name}\n{message}',
   },
 
   // ── Footer ──
   footer: {
     message: '¡Nos vemos pronto!',
-    name: 'Valentina',
+    name: 'Anaya Valentina',
     credits: 'Padres: Olga Garcia & Jose Padilla | Padrinos: Claudia & Jose Ursua',
     year: '2026',
   },

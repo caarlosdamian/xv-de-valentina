@@ -26,7 +26,7 @@ export const en: LocaleStrings = {
     venueLabel: 'Venue',
     addressLabel: 'Address',
     mapButton: 'Take me there!',
-    dateFormatted: 'Saturday, August 02, 2026',
+    dateFormatted: 'Sunday, August 02, 2026',
   },
 
   countdown: {
@@ -73,13 +73,13 @@ export const en: LocaleStrings = {
     messagePlaceholder: 'Write a message...',
     confirmButton: 'Confirm Attendance',
     declineButton: 'Unable to attend',
-    whatsappConfirm: 'Hello! I confirm my attendance to Valentina\'s Quinceañera 🎉\n\nName: {name}\nGuests: {guests}\n{message}',
-    whatsappDecline: 'Hello, unfortunately I won\'t be able to attend Valentina\'s Quinceañera 😔\n\nName: {name}\n{message}',
+    whatsappConfirm: 'Hello! I confirm my attendance to Anaya Valentina\'s Quinceañera 🎉\n\nName: {name}\nGuests: {guests}\n{message}',
+    whatsappDecline: 'Hello, unfortunately I won\'t be able to attend Anaya Valentina\'s Quinceañera 😔\n\nName: {name}\n{message}',
   },
 
   footer: {
     message: 'See you soon!',
-    name: 'Valentina',
+    name: 'Anaya Valentina',
     credits: 'Parents: Olga Garcia & Jose Padilla | Godparents: Claudia & Jose Ursua',
     year: '2026',
   },
