@@ -87,7 +87,7 @@ export const es = {
   // ── Footer ──
   footer: {
     message: '¡Nos vemos pronto!',
-    name: 'Anaya Valentina',
+    name: 'Anaya Valentina Padilla',
     credits: 'Padres: Olga Garcia & Jose Padilla | Padrinos: Claudia & Jose Ursua',
     year: '2026',
   },

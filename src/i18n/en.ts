@@ -79,7 +79,7 @@ export const en: LocaleStrings = {
 
   footer: {
     message: 'See you soon!',
-    name: 'Anaya Valentina',
+    name: 'Anaya Valentina Padilla',
     credits: 'Parents: Olga Garcia & Jose Padilla | Godparents: Claudia & Jose Ursua',
     year: '2026',
   },

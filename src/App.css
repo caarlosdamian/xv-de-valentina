@@ -817,10 +817,43 @@
   color: var(--color-textMuted);
 }
 
-.footer-name {
+.footer-name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  width: 100%;
+  max-width: 320px;
+}
+
+.footer-name-first {
   font-family: var(--font-accent, 'Great Vibes', cursive);
-  font-size: 3.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   color: var(--color-primaryLight);
+  line-height: 1;
+  margin-bottom: -0.5rem;
+  z-index: 1;
+  align-self: flex-start;
+}
+
+.footer-name-middle {
+  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+  font-size: clamp(2.5rem, 6vw, 3.5rem);
+  color: var(--color-primaryLight);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.footer-name-last {
+  font-family: var(--font-accent, 'Great Vibes', cursive);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--color-primaryLight);
+  line-height: 1;
+  margin-top: -0.5rem;
+  z-index: 1;
+  align-self: flex-end;
 }
 
 .footer-credits {
