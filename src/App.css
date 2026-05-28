@@ -796,6 +796,19 @@
   border-color: var(--color-primaryLight);
   color: var(--color-text);
 }
+.rsvp-banner {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: var(--color-surfaceGlass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--color-textMuted);
+  backdrop-filter: blur(10px);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
 
 /* ═══════════════════════════════════════════════════════════════════
    FOOTER

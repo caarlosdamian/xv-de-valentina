@@ -82,6 +82,7 @@ export const es = {
     declineButton: 'No podré asistir',
     whatsappConfirm: '¡Hola! Confirmo mi asistencia a los XV Años de Anaya Valentina 🎉\n\nNombre: {name}\nInvitados: {guests}\n{message}',
     whatsappDecline: 'Hola, lamentablemente no podré asistir a los XV Años de Anaya Valentina 😔\n\nNombre: {name}\n{message}',
+    noUrlMessage: 'Para poder confirmar tu asistencia, por favor utiliza tu enlace de invitación personalizado.',
   },
 
   // ── Footer ──

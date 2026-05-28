@@ -75,6 +75,7 @@ export const en: LocaleStrings = {
     declineButton: 'Unable to attend',
     whatsappConfirm: 'Hello! I confirm my attendance to Anaya Valentina\'s Quinceañera 🎉\n\nName: {name}\nGuests: {guests}\n{message}',
     whatsappDecline: 'Hello, unfortunately I won\'t be able to attend Anaya Valentina\'s Quinceañera 😔\n\nName: {name}\n{message}',
+    noUrlMessage: 'To be able to confirm your attendance, please use your personalized invitation link.',
   },
 
   footer: {
