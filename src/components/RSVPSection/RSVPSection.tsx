@@ -24,7 +24,7 @@ function buildSmsUrl(number: string, template: string, data: Record<string, stri
   return `sms:${number}${separator}body=${encodeURIComponent(message)}`;
 }
 
-export default function RSVPSection({ whatsappNumber, maxGuests: defaultMaxGuests = 3 }: RSVPProps) {
+export default function RSVPSection({ whatsappNumber }: RSVPProps) {
   const { t } = useLocale();
   const [name, setName] = useState('');
   const [guests, setGuests] = useState(1);
