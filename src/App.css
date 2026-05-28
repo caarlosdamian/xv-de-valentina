@@ -816,9 +816,21 @@
 .footer-section {
   text-align: center;
   padding-bottom: var(--space-xxl, 8rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
 }
 
 .footer-content {
+  position: relative;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -837,6 +849,14 @@
   gap: 0;
   width: 100%;
   max-width: 320px;
+}
+
+.footer-crown {
+  color: var(--color-primaryLight);
+  margin-bottom: -0.5rem;
+  align-self: flex-start;
+  margin-left: 2rem; /* offset a bit to align nicely over the cursive text */
+  transform: rotate(-10deg); /* Give it a playful little tilt */
 }
 
 .footer-name-first {

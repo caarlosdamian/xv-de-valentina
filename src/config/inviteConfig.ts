@@ -55,10 +55,10 @@ export const inviteConfig: InviteConfig = {
       props: {
         date: '2026-08-02',
         ceremony: {
-          venue: 'Ceremony',
-          address: '',
+          venue: 'Cielo at Castle Pines',
+          address: '485 W. Happy Canyon Rd. Castle Rock, CO. 80108',
           time: '4:00 PM',
-          mapUrl: '',
+          mapUrl: 'https://www.google.com/maps/place/Cielo+at+Castle+Pines/@39.43096,-104.897841,17z/data=!3m1!4b1!4m6!3m5!1s0x876c9bd402e13f9b:0xd9fee3e367b20284!8m2!3d39.43096!4d-104.897841!16s%2Fg%2F1jkxvy8vj?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D',
         },
         cocktail: {
           time: '5:30 PM - 6:30 PM',
